@@ -4,7 +4,44 @@
    Author's custom styles
    ========================================================================== */
 
+.navbar-brand {
+	color: #fff !important;
+}
+.navbar-brand img {
+	float: left;
+	height: 34px;
+	margin: -8px 10px 0 0;
+}
 
+.list-title {
+	border: none;
+  	font-size: 26px;
+  	font-weight: bold;
+  	padding: 1px;
+  	outline: none;
+}
+.list-title:focus, .list-title:hover {
+	padding: 0;
+	border: 1px solid #ccc;
+}
+.todo-input {
+	border: none;
+  	font-size: 22px;
+  	padding: 1px;
+  	outline: none;
+}
+.todo-input:focus, .todo-input:hover {
+	padding: 0;
+	border: 1px solid #ccc;
+}
+
+.todo-input-small {
+	font-size: 18px;
+}
+
+.todo-list-container form {
+	padding: 10px 0;
+}
 
 
 
