@@ -1,6 +1,5 @@
-<h1>Example TODO application<h1>
-<h2>AngularJS, SocketIO, Express.<h2>
-<hr>
+<h1>Example TODO application</h1>
+<h2>AngularJS, SocketIO, Express.</h2>
 <h3>Usage</h3>
 <pre>
 git clone ...
