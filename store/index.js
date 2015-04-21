@@ -3,8 +3,6 @@
  * @author rpi1337
  */
 var fs = require('fs');
-var Todo = require('../api/models/todo');
-var List = require('../api/models/list');
 
 Object.defineProperty(Array.prototype, 'toJSON', {
 	value: function() {
