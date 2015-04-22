@@ -6,7 +6,7 @@
 var helpers = require("../../helpers");
 var Model = require("./model");
 
-module.exports = (function(){
+module.exports = (function(Model){
 	helpers.extend(Todo, Model);
 	function Todo(data) {
 		Todo.superClass.constructor.call(this, data);
@@ -19,4 +19,4 @@ module.exports = (function(){
 	};
 	Todo.table = "todos";
 	return Todo;
-})();
+})(Model);

@@ -6,7 +6,7 @@
 var helpers = require("../../helpers");
 var Model = require("./model");
 
-module.exports = (function(){
+module.exports = (function(Model){
 	helpers.extend(List, Model);
 	function List(data) {
 		List.superClass.constructor.call(this, data);
@@ -17,4 +17,4 @@ module.exports = (function(){
 	};
 	List.table = "lists";
 	return List;
-})();
+})(Model);

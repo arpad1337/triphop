@@ -7,8 +7,11 @@ module.exports = (function  () {
 	var _ID = 1;
 	function Model(data) {
 		this.data = data;
-		if(!data.id) {
-			data.id = _ID;
+		if(this.data.id && this.data.id > _ID) {
+			_ID = this.data.id;
+		}
+		if(!this.data.id) {
+			this.data.id = _ID;
 		}
 		_ID++;
 		if(!this.validate()){
