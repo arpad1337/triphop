@@ -53,8 +53,8 @@ app.use(function(err, req, res, next) {
     });
 });
 
-var server = app.listen(process.end.$PORT || 5000, function() {
-    console.log('API listening on localhost', process.end.$PORT || 5000);
+var server = app.listen(process.end.PORT || 5000, function() {
+    console.log('API listening on localhost', process.end.PORT || 5000);
     SocketService.init(io.listen(server));
     SocketService.listen();
 });
