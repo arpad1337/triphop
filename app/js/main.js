@@ -10,7 +10,7 @@ angular.module('triphop', [])
 			};
 			return {
 				init: function() {
-					_socketConnection = io('localhost:5000');
+					_socketConnection = io(window.location.href);
 					_testConnection();
 					return this;
 				},
